@@ -1,4 +1,4 @@
-#Macys.com API Sample Starter with local proxy
+#Macys.com API Sample Starter
 Welcome! Follow these directions to set up a local proxy on your machine for the macys.com API
 
 ## Instructions
