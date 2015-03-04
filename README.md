@@ -3,12 +3,8 @@ Welcome! Follow these directions to set up a local proxy on your machine for the
 
 ## Instructions
 * Make sure you have Python installed
-* ```shell
-cd to this project directory
-```
-* ```shell
-sh -x install.sh1 #this will install all dependencies and start the server
-``` 
+* `cd` to this project directory
+* run `sh -x install.sh`(this will install all dependencies and start the server)
 * Go to http://localhost:5000
 
 ## Local server
