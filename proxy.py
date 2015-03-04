@@ -10,6 +10,7 @@ def api(uri):
 	requestUri = os.path.join('http://api.macys.com/', uri)
 	if request.query_string: 
 		requestUri = os.path.join(requestUri, '?' + request.query_string)
+	# Change the X-Macys-Webservice-Client-Id to your own
 	req = requests.get(requestUri, headers={'Accept':'application/json', 'X-Macys-Webservice-Client-Id': 'neohack14'}, stream=True)
 	return Response(stream_with_context(req.iter_content()), content_type = req.headers['content-type'])
 
