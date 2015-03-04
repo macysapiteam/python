@@ -1,28 +1,32 @@
-<h1>Macys.com API Sample Starter with local proxy</h1>
+#Macys.com API Sample Starter with local proxy
+Welcome! Follow these directions to set up a local proxy on your machine for the macys.com API
 
-<p>Welcome! Follow these directions to set up a local proxy on your machine for the macys.com API</p>
+## Instructions
+* Make sure you have Python installed
+* ```shell
+cd to this project directory
+```
+* ```shell
+sh -x install.sh1 #this will install all dependencies and start the server
+``` 
+* Go to http://localhost:5000
 
-<h2>Instructions</h2>
-	<ol>
-		<li>Make sure you have Python installed</li>
-		<li><code>$ cd</code> to this project directory</li>
-		<li><code>$ sh -x install.sh</code> (this will install all dependencies and start the server)</li>
-		<li>View on <code>localhost:5000</code></li>
-	</ol>
+## Local server
+### To start
+```Shell
+python proxy.py
+```
 
-<h2>Local server</h2>
-<h3>To start</h3>
-<code>$python proxy.py</code>
-
-<h3>To kill</h3>
+### To kill
 Ctrl + C
 
-<h2>To edit</h2>
-	<ul>
-		<li>Make changes in the <code>static/</code> directory</li>
-		<li>An example ajax call to the macys.com API is under static/js/main.js</li>
-		<li>If you'd like to make AJAX calls through this proxy, here is an example:
-			<pre><code>$.ajax({
+## To edit
+* Make changes in the `static/` directory
+* An example ajax call to the macys.com API is under static/js/main.js
+* If you'd like to make AJAX calls through this proxy, here is an example:
+
+```javascript
+$.ajax({
 	//use the api/ route
 	url: 'api/v3/catalog/reviews?productId=77589',
 	success: function(data) {
@@ -30,12 +34,8 @@ Ctrl + C
 		console.log(data);
 	}
 })
-</code></pre>
-		</li>
-	</ul>
+```
 
-<h2>Credits</h2>
-	<ul>
-		<li>Based off of this example <a href="http://flask.pocoo.org/snippets/118/">http://flask.pocoo.org/snippets/118/</a></li>
-		<li>More on Flask <a href="http://flask.pocoo.org/">http://flask.pocoo.org/</a></li>
-	</ul>
+## Credits
+* Based off of this example <a href="http://flask.pocoo.org/snippets/118/">http://flask.pocoo.org/snippets/118/</a>
+* More on Flask <a href="http://flask.pocoo.org/">http://flask.pocoo.org/</a>
